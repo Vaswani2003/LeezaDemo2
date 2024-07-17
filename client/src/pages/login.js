@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Login.css'; 
 
 export default function Login() {
@@ -48,12 +49,15 @@ export default function Login() {
             <form onSubmit={handleSubmit} className="Login-form">
                 <label htmlFor="username">Username:</label>
                 <input type="text" id="username" name="username" value={username} onChange={handleUsernameChange} />
-
+    
                 <label htmlFor="password">Password:</label>
                 <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
-
+    
                 <button type="submit">Login</button>
             </form>
+            <div className="Signup-link">
+                Don't have an account? <Link to="/signup">Sign up</Link>
+            </div>
         </div>
     );
 }

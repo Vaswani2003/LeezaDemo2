@@ -1,0 +1,65 @@
+/* Assessment.css */
+
+.Assessment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Questions-list {
+    margin-top: 20px;
+}
+
+.Question-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.Question-item p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Options button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Options button.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.Total-score {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Total-score p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Total-score button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Total-score button:hover {
+    background-color: #0056b3;
+}

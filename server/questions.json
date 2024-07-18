@@ -1,0 +1,54 @@
+[
+    {
+        "questionText": "How satisfied are you with our service?",
+        "options": [
+            { "optionText": "Very Unsatisfied", "score": 1 },
+            { "optionText": "Unsatisfied", "score": 2 },
+            { "optionText": "Neutral", "score": 3 },
+            { "optionText": "Satisfied", "score": 4 },
+            { "optionText": "Very Satisfied", "score": 5 }
+        ]
+    },
+    {
+        "questionText": "How often do you use our service?",
+        "options": [
+            { "optionText": "Never", "score": 1 },
+            { "optionText": "Rarely", "score": 2 },
+            { "optionText": "Sometimes", "score": 3 },
+            { "optionText": "Often", "score": 4 },
+            { "optionText": "Always", "score": 5 }
+        ]
+    },
+    {
+        "questionText": "How likely are you to recommend our service to others?",
+        "options": [
+            { "optionText": "Very Unlikely", "score": 1 },
+            { "optionText": "Unlikely", "score": 2 },
+            { "optionText": "Neutral", "score": 3 },
+            { "optionText": "Likely", "score": 4 },
+            { "optionText": "Very Likely", "score": 5 }
+        ]
+    },
+    {
+        "questionText": "How would you rate the quality of our customer support?",
+        "options": [
+            { "optionText": "Very Poor", "score": 1 },
+            { "optionText": "Poor", "score": 2 },
+            { "optionText": "Average", "score": 3 },
+            { "optionText": "Good", "score": 4 },
+            { "optionText": "Excellent", "score": 5 }
+        ]
+    },
+    {
+        "questionText": "How easy is it to use our service?",
+        "options": [
+            { "optionText": "Very Difficult", "score": 1 },
+            { "optionText": "Difficult", "score": 2 },
+            { "optionText": "Neutral", "score": 3 },
+            { "optionText": "Easy", "score": 4 },
+            { "optionText": "Very Easy", "score": 5 }
+        ]
+    }
+]
+
+

@@ -1,16 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const Question = require('../models/question.model'); 
+const Question = require('../model/questions'); 
 
-
-router.get('/questions', async (req, res) => {
+router.get('/get-questions', async (req, res) => {
     try {
+        console.log('Fetching questions');
         const questions = await Question.find();
+        console.log(questions);
         res.json({ questions });
+        console.log('Questions sent');
     } catch (error) {
-        console.error('Error fetching questions:', error);
-        res.status(500).json({ message: 'Internal Server Error' });
+        res.status(500).json({ error: 'An error occurred while fetching questions.' });
     }
 });
+
 
 module.exports = router;

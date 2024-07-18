@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './components/Homepage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/Homepage';
 import Login from './pages/login';
 import Assessment from './pages/assesment';
 import Signup from './pages/signup';
@@ -10,26 +10,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px' }}>
-  <h1 style={{ margin: '0', color: '#333' }}>Leeza</h1>
-  <nav>
-    <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex' }}>
-      <li style={{ marginRight: '20px' }}>
-        <Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link>
-      </li>
-      <li style={{ marginRight: '20px' }}>
-        <Link to="/login" style={{ textDecoration: 'none', color: '#333' }}>Login</Link>
-      </li>
-      <li style={{ marginRight: '20px' }}>
-        <Link to="/assessment" style={{ textDecoration: 'none', color: '#333' }}>Assessment</Link>
-      </li>
-      <li>
-        <Link to="/signup" style={{ textDecoration: 'none', color: '#333' }}>Sign Up</Link>
-      </li>
-    </ul>
-  </nav>
-</header>
 
         {/* Main Content */}
         <main style={{ padding: '20px' }}>

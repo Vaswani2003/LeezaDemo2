@@ -59,7 +59,7 @@ app.post('/login', async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        // Check if the user exists
+        
         let users = await User.find({});
         console.log(users);
         let user = await User.findOne({ email });
@@ -67,13 +67,13 @@ app.post('/login', async (req, res) => {
             return res.status(404).json({ message: 'User not found', success: false });
         }
 
-        // Check if the password is correct
+        
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
             return res.status(400).json({ message: 'Invalid credentials', success: false });
         }
 
-        // User found and authenticated
+        
         res.status(200).json({ message: 'User logged in successfully', success: true });
     } catch (error) {
         console.error('Error logging in user:', error);
